@@ -1,0 +1,4 @@
+# Simple Dockerfile for minidocker
+COPY hello.c
+RUN gcc -static -o app hello.c
+ENTRYPOINT /bin/app
